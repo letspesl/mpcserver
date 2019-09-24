@@ -1,0 +1,35 @@
+{
+    "timezone" : "+00:00",
+    "mongo" : {
+        "host" : "mongo.int.nblocks.io:27017",
+        "dbName" : "mpcrypto",
+        "account" : "mpcrypto",
+        "passwd" : "mpcrypto#201909"
+    },
+    "webLog" : {
+        "level" : "info",
+        "filename" : "./log/web.log", // you must make log folder
+        "datepattern" : ".yyyy-MM-dd"
+    },
+    "dbLog" : {
+        "level" : "info",
+        "filename" : "./log/db.log", // you must make log folder
+        "datepattern" : ".yyyy-MM-dd"
+    },
+    "errLog" : {
+        "level" : "info",
+        "filename" : "./log/err.log", // you must make log floder
+        "datepattern" : ".yyyy-MM-dd"
+    },
+    "debugLog" : {
+        "level" : "debug",
+        "filename" : "./log/debug.log", // you must make log floder
+        "datepattern" : ".yyyy-MM-dd"
+    },
+    "cors" : {
+        "whitelist" : "*"
+    },
+    "userAgent" : "mpcrypto",
+    "appVersion" : "1.0.0",
+    "sdkVersion" : "1.0.0"
+}
