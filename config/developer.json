@@ -1,11 +1,24 @@
 {
     "timezone" : "+00:00",
+    "salt" : "DEVELOPERSALT",
+    "passwdSalt" : "DEVELOPERPASSWDSALT",
     "mongo" : {
         "host" : "localhost:27017",
         "dbName" : "devmpcrypto",
         "account" : "devmpcrypto",
         "passwd" : "devmpcrypto123!"
     },
+    "redis" : {
+        "hosts" : "localhost",
+        "port" : 6379,
+        "expire" : {
+            "default" : 86400,
+            "redis_user_session" : 7776000, // 60*60*24*90 (90 day)
+            "redis_mongo_x_lock" : 10,      // 10 sec
+            "redis_review" : 7776000        // 90 day
+        }
+    },
+    "party" : ["5d8daf940b11f220a67cf9ed"],
     "webLog" : {
         "level" : "info",
         "filename" : "./log/web.log", // you must make log folder

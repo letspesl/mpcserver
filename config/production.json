@@ -1,11 +1,24 @@
 {
     "timezone" : "+00:00",
+    "salt" : "PRODUCTIONSALT",
+    "passwdSalt" : "PRODUCTIONPASSWDSALT",
     "mongo" : {
         "host" : "mongo.int.nblocks.io:27017",
         "dbName" : "mpcrypto",
         "account" : "mpcrypto",
         "passwd" : "mpcrypto#201909"
     },
+    "redis" : {
+        "hosts" : "redis.int.nblocks.io",
+        "port" : 6379,
+        "expire" : {
+            "default" : 86400,
+            "redis_user_session" : 7776000, // 60*60*24*90 (90 day)
+            "redis_mongo_x_lock" : 10,      // 10 sec
+            "redis_review" : 7776000        // 90 day
+        }
+    },
+    "party" : [""],
     "webLog" : {
         "level" : "info",
         "filename" : "./log/web.log", // you must make log folder

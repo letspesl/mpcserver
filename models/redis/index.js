@@ -36,8 +36,6 @@ function _key(type, keyIds) {
             return 'nb:sess:admins:' + keyIds[0];   // admin id
         case SEnum.REDIS_TYPE_USER_SESSION:
             return 'nb:sess:users:' + keyIds[0];    // user id
-        case SEnum.REDIS_TYPE_DAPP_SESSION:
-            return 'nb:sess:dapps:' + keyIds[0];    // dapp id
         case SEnum.REDIS_TYPE_BATCH_STATUS:
             return `nb:batch:status:${keyIds[0]}`;  // job name
         case SEnum.REDIS_TYPE_BATCH_CMD:
@@ -50,8 +48,6 @@ function _key(type, keyIds) {
             return 'nb:frontend:manifest';
         case SEnum.REDIS_TYPE_X_LOCK:
             return `nb:mongo:xlock:${keyIds[0]}`;   // composit key ex) collName_fieldName_keyName
-        case SEnum.REDIS_TYPE_REVIEW:
-            return `nb:review:dapps:${keyIds[0]}`;
     }
     return 'none';
 }

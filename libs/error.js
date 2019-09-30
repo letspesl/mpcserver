@@ -14,14 +14,8 @@ const errors = {
     NOT_ACCEPTABLE : {error_code : 406, error_msg : 'Not Acceptable'},
     INTERNAL_SERVER_ERROR : {error_code : 500, error_msg : 'Internal Server Error'},
     INVALID_ORIGIN_ACCESS_TOKEN: {error_code : 304, error_msg : 'This origin access token is invalid'},
-    MAINTENANCE_ERROR : {error_code : 1000, error_msg : 'nBlocks is currently under maintenance. We will be back soon!'},
+    MAINTENANCE_ERROR : {error_code : 1000, error_msg : 'This server is currently under maintenance.'},
     DUPLICATE_ERROR : {error_code : 1002, error_msg : 'Duplicate'},
-    INCORRECT_APP_VERSION : {error_code : 1005, error_msg : 'Incorrect App Version'},
-    REQUEST_INCOMPLETE : {error_code : 2001, error_msg : 'Request Incomplete'},
-    DUPLICATE_EXEC : {error_code : 2004, error_msg : 'Duplicate executed'},
-    ALREADY_REGISTERED : {error_code : 3004, error_msg : 'Already registered'},
-    EXPIRED_CODE : {error_code : 3005, error_msg : 'This code is expired'},
-    INVALID_CODE : {error_code : 3006, error_msg : 'This code is invalid'},
 };
 
 const sendRes = function(res, err, extra) {

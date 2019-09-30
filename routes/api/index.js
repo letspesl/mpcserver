@@ -1,9 +1,9 @@
 'use strict';
 
 let useRoutes = function(app) {
-    const userRouter = require('./user');
+    const protocolRouter = require('./protocol');
 
-    app.use('/api/', userRouter);
+    app.use('/api/', protocolRouter);
 };
 
 module.exports = exports = {
