@@ -18,7 +18,7 @@
             "redis_review" : 7776000        // 90 day
         }
     },
-    "party" : ["5d8daf940b11f220a67cf9ed"],
+    "party" : ["5d8daf940b11f220a67cf9ed", "5d92d72524dd3979a1f2849c"],
     "webLog" : {
         "level" : "info",
         "filename" : "./log/web.log", // you must make log folder
